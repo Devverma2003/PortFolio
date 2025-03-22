@@ -28,6 +28,9 @@ function App() {
         <Hr />
       </div>
       <Project/>
+      <div className="mt-[-2rem]">
+        <Hr />
+      </div>
     </div>
   );
 }
