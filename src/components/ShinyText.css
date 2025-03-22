@@ -1,0 +1,32 @@
+.shiny-text {
+  color: #ffe4e46a; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+  120deg,
+  rgba(255, 255, 0, 0) 40%,   /* Transparent Yellow */
+  rgba(255, 215, 0, 1) 80%,   /* Solid Bright Gold */
+  rgba(255, 255, 0, 0) 60%    /* Transparent Yellow */
+);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+  font-size: 1.8rem;
+  line-height: 30px;
+  width: 100%;
+  margin-left: 170px;
+
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
+}
