@@ -54,7 +54,7 @@ const Skills = () => {
   };
 
   return (
-    <div className="overflow-visible relative pt-10">
+    <div className="overflow-visible relative pt-10 ">
       <div className="max-w-5xl mx-auto">
         <Slider {...settings}>
           {skills.map((skill, index) => (

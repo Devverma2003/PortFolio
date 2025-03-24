@@ -41,6 +41,7 @@ const StyledWrapper = styled.div`
     letter-spacing: -0.06em;
     margin-left: 42rem;
     margin-top: 10rem;
+    margin-bottom: 1rem;
   }
 
   .button-item {

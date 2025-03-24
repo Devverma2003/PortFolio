@@ -3,8 +3,8 @@ import Switch from './Switch'
 
 const Navbar = () => {
   return (
-    <div className="w-full fixed top-2 left-0 z-[9999] flex justify-center">
-      <nav className="w-[95%] md:w-[90%] lg:w-[98%] bg-purple-200 bg-opacity-90 shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 rounded-lg">
+    <div className="w-full fixed top-2 left-0 z-[9999] flex justify-center ">
+      <nav className="w-[95%] md:w-[90%] lg:w-[98%] bg-transparent shadow lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 rounded-lg">
         <div className="container flex flex-wrap items-center justify-between mx-auto text-slate-800">
           <a href="#"
             className="mr-4 block cursor-pointer py-1.5 text-xl text-slate-800 font-semibold">

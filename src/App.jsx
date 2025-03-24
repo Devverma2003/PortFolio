@@ -1,14 +1,16 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Hr from "./components/Hr";
+
 import BlobCursor from "./components/BlobCursor";
 import About from "./pages/About";
 import "./App.css";
-import Button from "./components/button";
+
 import Services from "./pages/Services";
-import Card from "./components/Card";
+
 import Project from "./pages/Project";
+import ContactPage from "./pages/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,21 +18,17 @@ function App() {
       <BlobCursor blobType="circle" fillColor="#00f0ff" />
       <Navbar />
       <Home />
-      <Button />
-      <Hr />
+    
+      
       <About />
-      <div className="mt-[-8rem]">
-        <Hr />
-      </div>
+      
       <Services />
-      <Card />
-      <div className="mt-[-2rem]">
-        <Hr />
-      </div>
+      
+      
       <Project/>
-      <div className="mt-[-2rem]">
-        <Hr />
-      </div>
+      
+      <ContactPage/>
+      <Footer/>
     </div>
   );
 }

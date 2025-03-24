@@ -19,7 +19,7 @@ export default function ExpandingHR() {
   }, []);
 
   return (
-    <div className="  relative flex flex-col items-center justify-center">
+    <div className="  relative flex flex-col items-center justify-center  bg-gradient-to-r from-purple-400 to-indigo-600 ">
       {/* Sticky Section to Detect Scroll */}
       <div className="sticky top-0 w-full h-10"></div>
 

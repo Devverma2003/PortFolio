@@ -5,7 +5,7 @@ import CardButton from "./CardButton";
 const Card = ({ title, subtitle }) => {
   return (
     <StyledWrapper>
-      <div className="container noselect">
+      <div className="container noselect ">
         <div className="canvas">
           {[...Array(25)].map((_, i) => (
             <div key={i} className={`tracker tr-${i + 1}`} />

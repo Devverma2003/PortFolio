@@ -6,9 +6,9 @@ import Skills from "../components/Skills";
 const About = () => {
   return (
     <>
-      <div className="h-screen  ">
+      <div className="h-screen bg-gradient-to-r from-purple-400 to-indigo-600 ">
         {" "}
-        <div className="flex justify-center items-center mt-14 text-3xl font-semibold">
+        <div className="flex justify-center items-center  text-3xl font-semibold">
           <h2 className="text-center text-3xl font-bold mb-8 ">About Me</h2>
         </div>
         <p className="font-semibold text-lg w-1/2 ml-60 mt-10">

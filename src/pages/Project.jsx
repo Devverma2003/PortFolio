@@ -43,7 +43,7 @@ const ProjectsPage = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className="text-black min-h-screen">
+        <div className="text-black min-h-screen  bg-gradient-to-b from-purple-400 to-indigo-600 ">
             <header className="text-center py-6">
                 <h1 className="text-4xl font-bold">My Projects</h1>
             </header>
