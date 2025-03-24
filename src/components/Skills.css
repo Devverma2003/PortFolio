@@ -1,0 +1,33 @@
+.slick-prev, .slick-next {
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%; /* Center arrows vertically */
+    transform: translateY(-50%);
+}
+
+/* Ensure arrows are inside the container */
+.slick-prev {
+    left: 10px; /* Adjust position */
+}
+
+.slick-next {
+    right: 10px; /* Adjust position */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .slick-prev, .slick-next {
+        width: 20px; /* Smaller arrows */
+        height: 20px;
+    }
+    
+    .slick-prev {
+        left: 5px; /* Move arrows inside for small screens */
+    }
+    
+    .slick-next {
+        right: 5px; /* Move arrows inside for small screens */
+    }
+}

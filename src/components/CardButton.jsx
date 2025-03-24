@@ -4,7 +4,7 @@ import styled from "styled-components";
 const CardButton = () => {
   return (
     <StyledWrapper>
-      <button className="readmore-btn">
+      <button className="readmore-btn ml-14">
         <span className="book-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"

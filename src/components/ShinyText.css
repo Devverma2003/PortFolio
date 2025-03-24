@@ -1,11 +1,11 @@
 .shiny-text {
-  color: #ffe4e46a; /* Adjust this color to change intensity/style */
+  color: #ffe4e46a;
   background: linear-gradient(
-  120deg,
-  rgba(255, 255, 0, 0) 40%,   /* Transparent Yellow */
-  rgba(255, 215, 0, 1) 80%,   /* Solid Bright Gold */
-  rgba(255, 255, 0, 0) 60%    /* Transparent Yellow */
-);
+    120deg,
+    rgba(255, 255, 0, 0) 40%, 
+    rgba(255, 215, 0, 1) 80%, 
+    rgba(255, 255, 0, 0) 60%
+  );
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -14,8 +14,9 @@
   font-size: 1.8rem;
   line-height: 30px;
   width: 100%;
-  margin-left: 170px;
-
+  text-align: center; /* Center text instead of fixed margin */
+  max-width: 80%; /* Prevents overflow */
+  margin: 0 auto; /* Centers the text */
 }
 
 @keyframes shine {
@@ -29,4 +30,12 @@
 
 .shiny-text.disabled {
   animation: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .shiny-text {
+    font-size: 1.5rem; /* Smaller font for mobile */
+    max-width: 90%; /* Adjust for smaller screens */
+  }
 }

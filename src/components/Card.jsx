@@ -5,7 +5,7 @@ import CardButton from "./CardButton";
 const Card = ({ title, subtitle }) => {
   return (
     <StyledWrapper>
-      <div className="container noselect ">
+      <div className="container noselect ml-14 ">
         <div className="canvas">
           {[...Array(25)].map((_, i) => (
             <div key={i} className={`tracker tr-${i + 1}`} />
@@ -67,10 +67,20 @@ const CardGrid = () => {
 
 const StyledGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
   gap: 40px;
   padding: 20px;
-  margin-left: 200px;
+  margin: 0 auto; /* Centers the grid */
+  max-width: 1200px; /* Ensures proper alignment */
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  @media (max-width: 768px) {
+
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+  }
 `;
 
 const StyledWrapper = styled.div`
@@ -80,6 +90,7 @@ const StyledWrapper = styled.div`
     width: 190px;
     height: 254px;
     transition: 200ms;
+    
   }
 
   .container:active {

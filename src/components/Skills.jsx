@@ -4,6 +4,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './Skills.css';
 
 const skills = [
   { title: "HTML ", percentage: 95, gradientId: "grad1" },
@@ -45,16 +46,35 @@ const Skills = () => {
   }, []);
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3, // Default: Show 3 slides
     slidesToScroll: 1,
-    arrows: true,
+    adaptiveHeight: true, // Ensures smooth navigation
+    arrows: false, // Disable arrows
+    autoplay: true, // Enable auto-slide
+    autoplaySpeed: 3000, // Change slide every 3 seconds
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768, // Mobile devices
+        settings: { slidesToShow: 1 },
+      },
+    ],
   };
+  
+  
+
+  
+  
+  
 
   return (
-    <div className="overflow-visible relative pt-10 ">
+    <div className=" relative pt-10 px-4 ">
       <div className="max-w-5xl mx-auto">
         <Slider {...settings}>
           {skills.map((skill, index) => (
@@ -77,7 +97,9 @@ const Skills = () => {
         </Slider>
       </div>
     </div>
+
   );
-};
+}
+  
 
 export default Skills;

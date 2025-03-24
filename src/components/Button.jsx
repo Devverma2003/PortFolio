@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Button = () => {
   return (
@@ -19,11 +19,26 @@ const Button = () => {
       </button>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   button {
     all: unset;
+  }
+  display: flex;
+  justify-content: center; /* Centers the button */
+  align-items: center;
+  margin-top: 10rem; /* Keeping original spacing */
+
+  .button {
+    margin: 0 auto; /* Ensures centering on all screen sizes */
+  }
+
+  @media (max-width: 768px) {
+    .button {
+      font-size: 1rem;
+      padding: 0 1.5rem;
+    }
   }
 
   .button {
@@ -39,8 +54,6 @@ const StyledWrapper = styled.div`
     font-weight: 640;
     color: #fafaf6;
     letter-spacing: -0.06em;
-    margin-left: 42rem;
-    margin-top: 10rem;
     margin-bottom: 1rem;
   }
 
@@ -126,22 +139,19 @@ const StyledWrapper = styled.div`
   .button:hover .button-inner-static {
     opacity: 0;
     transform: translateY(-70%);
-    transition:
-      transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
       opacity 0.3s linear;
   }
 
   .button:hover .button-inner-hover {
     opacity: 1;
     transform: translateY(0);
-    transition:
-      transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
+    transition: transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
       opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
   .button:hover .button-bg-layer {
-    transition:
-      transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
+    transition: transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
       opacity 0.3s linear;
   }
 
@@ -157,6 +167,7 @@ const StyledWrapper = styled.div`
   .button:hover .button-bg-layer-3 {
     transition-delay: 0.2s;
     transform: scale(1);
-  }`;
+  }
+`;
 
 export default Button;

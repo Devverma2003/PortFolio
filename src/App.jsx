@@ -18,17 +18,11 @@ function App() {
       <BlobCursor blobType="circle" fillColor="#00f0ff" />
       <Navbar />
       <Home />
-    
-      
       <About />
-      
       <Services />
-      
-      
-      <Project/>
-      
-      <ContactPage/>
-      <Footer/>
+      <Project />
+      <ContactPage />
+      <Footer />
     </div>
   );
 }

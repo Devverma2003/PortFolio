@@ -21,7 +21,8 @@ const StatsCounter = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center gap-12 mt-16 bg-[#acfff8] bg-clip-text text-transparent">
+    <div className="flex flex-wrap justify-center items-center gap-12 mt-16 bg-[#acfff8] bg-clip-text text-transparent text-center">
+
       <div className="text-center">
         <h2 className="text-4xl font-bold">{experience}+</h2>
         <p className="text-lg"> Month Experience</p>
