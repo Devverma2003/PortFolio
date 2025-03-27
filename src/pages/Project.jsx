@@ -5,37 +5,37 @@ const projects = [
         title: "ECommerce Website",
         description: "An online store using FakeStoreAPI, built with HTML, CSS, and JavaScript.",
         link: "#",
-        image: "/src/assets/images/Ecommerce.png" // Replace with actual image URL
+        image: "Ecommerce.png" // Replace with actual image URL
     },
     {
         title: "Text Editor",
         description: "A React and Tailwind-based text editor with various text transformation features.",
         link: "https://github.com/Devverma2003/text-editor",
-        image: "/src/assets/images/texteditor.png" // Replace with actual image URL
+        image: "texteditor.png" // Replace with actual image URL
     },
     {
         title: "Password Generator",
         description: "A password generator built with React and Tailwind CSS, allowing users to generate secure passwords ranging from 8 to 100 characters with options for numbers, symbols, and a copy button.",
         link: "https://github.com/Devverma2003/Password-genertor",
-        image:  "/src/assets/images/Password.png"// Replace with actual image URL
+        image:  "Password.png"// Replace with actual image URL
     },
     {
         title: "News Website",
         description: "A news website built with React and Tailwind CSS, fetching real-time news from an API and displaying category-wise news for a better browsing experience.",
         link: "#",
-        image: "/src/assets/images/news.png" // Replace with actual image URL
+        image: "news.png" // Replace with actual image URL
     },
     {
         title: "Bg-Color-Changer",
         description: "A background color converter built with React and Tailwind CSS, allowing users to change the background dynamically by clicking different color buttons.",
         link: "https://github.com/Devverma2003/Background-Changer",
-        image: "/src/assets/images/bg-color.png" // Replace with actual image URL
+        image: "bg-color.png" // Replace with actual image URL
     },
     {
         title: "Currency Convertor",
         description: "A currency converter built with React and Tailwind CSS, using an API for real-time exchange rates.",
         link: "https://github.com/Devverma2003/Currency-Convertor",
-        image: "/src/assets/images/currencyconvertor.png" // Replace with actual image URL
+        image: "currencyconvertor.png" // Replace with actual image URL
     }
 ];
 
