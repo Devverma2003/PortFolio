@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-
+ 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", phone: "", message: "" });
 
@@ -11,6 +11,8 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert("Message sent successfully!");
+    console.log(formData);
+    
   };
 
   return (

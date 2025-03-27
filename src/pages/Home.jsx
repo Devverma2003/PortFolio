@@ -2,10 +2,14 @@ import React from "react";
 import SplitText from "../components/SplitText";
 import Button from "../components/Button";
 
+
 const Home = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
+  const download =() =>{
+    <a href="https://drive.google.com/file/d/1DiFhXtP8w9mWUoOuknaVY28QfBMhuOAu/view?usp=drive_link"></a>
+  }
 
   return (
     <div className="bg-gradient-to-b from-purple-400 to-indigo-600 min-h-screen flex flex-col items-center px-4">
