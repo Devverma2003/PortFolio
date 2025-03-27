@@ -8,7 +8,7 @@ const Home = () => {
     console.log("All letters have animated!");
   };
   const download =() =>{
-    <a href="https://drive.google.com/file/d/1DiFhXtP8w9mWUoOuknaVY28QfBMhuOAu/view?usp=drive_link"></a>
+    <a href="https://drive.google.com/file/d/1ve37IvJQCUzxGy6_HqLBO0zzlNLRDqIm/view?usp=drive_link"></a>
   }
 
   return (
