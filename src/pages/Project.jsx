@@ -10,17 +10,17 @@ const projects = [
     {
         title: "Text Editor",
         description: "A React and Tailwind-based text editor with various text transformation features.",
-        link: "#",
+        link: "https://github.com/Devverma2003/text-editor",
         image: "/src/assets/images/texteditor.png" // Replace with actual image URL
     },
     {
         title: "Password Generator",
         description: "A password generator built with React and Tailwind CSS, allowing users to generate secure passwords ranging from 8 to 100 characters with options for numbers, symbols, and a copy button.",
-        link: "#",
+        link: "https://github.com/Devverma2003/Password-genertor",
         image:  "/src/assets/images/Password.png"// Replace with actual image URL
     },
     {
-        title: "News Webiste",
+        title: "News Website",
         description: "A news website built with React and Tailwind CSS, fetching real-time news from an API and displaying category-wise news for a better browsing experience.",
         link: "#",
         image: "/src/assets/images/news.png" // Replace with actual image URL
@@ -28,13 +28,13 @@ const projects = [
     {
         title: "Bg-Color-Changer",
         description: "A background color converter built with React and Tailwind CSS, allowing users to change the background dynamically by clicking different color buttons.",
-        link: "#",
+        link: "https://github.com/Devverma2003/Background-Changer",
         image: "/src/assets/images/bg-color.png" // Replace with actual image URL
     },
     {
         title: "Currency Convertor",
         description: "A currency converter built with React and Tailwind CSS, using an API for real-time exchange rates.",
-        link: "#",
+        link: "https://github.com/Devverma2003/Currency-Convertor",
         image: "/src/assets/images/currencyconvertor.png" // Replace with actual image URL
     }
 ];
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
     return (
         <div className="text-black min-h-screen  bg-gradient-to-b from-purple-400 to-indigo-600 ">
             <header className="text-center py-6">
-                <h1 className="text-4xl font-bold">My Projects</h1>
+                <p className="text-3xl font-bold mt-8 mb-4">My Projects</p>
             </header>
             <main className="container mx-auto py-10 px-6">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -13,8 +13,8 @@ const Home = () => {
       {/* Image Section */}
       <div className="flex justify-center items-center mt-20 sm:mt-32">
         <img
-          className="h-48 w-48 sm:h-64 sm:w-64 transition-all duration-300 rounded-full blur-sm hover:blur-none"
-          src="https://images.unsplash.com/photo-1490138139357-fc819d02e344?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Ym95fGVufDB8fDB8fHww"
+          className="h-48 w-48 sm:h-64 sm:w-64 transition-all duration-300 rounded-full "
+          src="img.png"
           alt="image description"
         />
       </div>

@@ -1,220 +1,136 @@
-import React from "react";
-import styled from "styled-components";
-import CardButton from "./CardButton";
+import React from 'react';
+import styled from 'styled-components';
 
-const Card = ({ title, subtitle }) => {
+const Card = () => {
   return (
     <StyledWrapper>
-      <div className="container noselect ml-14 ">
-        <div className="canvas">
-          {[...Array(25)].map((_, i) => (
-            <div key={i} className={`tracker tr-${i + 1}`} />
-          ))}
-          <div id="card">
-            <p id="prompt">{title}</p>
-            <div className="title">{subtitle}</div>
-          </div>
+      <div className="cards-container">
+        <div className="card card-5">
+          <div className="card__icon">🌐</div>
+          <p className="card__exit">※</p>
+          <div className="text">We offer professional web development services to help you build a strong online presence.</div>
+          <p className="card__apply">
+            <p className="card__link" href="#">Web Development </p>
+          </p>
+        </div>
+        <div className="card card-5">
+          <div className="card__icon">📈</div>
+          <p className="card__exit">※</p>
+          <div className="text">Improve your websites visibility on search engines with our SEO optimization services.</div>
+          <p className="card__apply">
+            <p className="card__link" href="#">SEO Optimization</p>
+          </p>
+        </div>
+        <div className="card card-5">
+          <div className="card__icon">🪄</div>
+          <p className="card__exit">※</p>
+          <div className="text">Our UI/UX design services ensure that your website is user-friendly and visually appealing.</div>
+          <p className="card__apply">
+            <p className="card__link" href="#">UI/UX Design </p>
+          </p>
+        </div>
+        <div className="card card-5">
+          <div className="card__icon">🎨</div>
+          <p className="card__exit">※</p>
+          <div className="text">We provide creative logo design services to help you establish a unique brand identity.</div>
+          <p className="card__apply">
+            <p className="card__link" href="#">Logo Design </p>
+          </p>
+        </div>
+        <div className="card card-5">
+          <div className="card__icon">✎ᝰ</div>
+          <p className="card__exit">※</p>
+          <div className="text">Our content writing services will help you create engaging and informative content for your audience.</div>
+          <p className="card__apply">
+            <p className="card__link" href="#">Content Writing</p>
+          </p>
+        </div>
+        <div className="card card-5">
+          <div className="card__icon">🗜️</div>
+          <p className="card__exit">※</p>
+          <div className="text">Our graphic design services will help you create stunning visuals for your brand.</div>
+          <p className="card__apply">
+            <p className="card__link" href="#">Graphic Design </p>
+          </p>
         </div>
       </div>
-
-      <CardButton />
     </StyledWrapper>
   );
-};
-
-const CardGrid = () => {
-  const cards = [
-    {
-      title: "Web Development",
-      subtitle:
-        "We offer professional web development services to help you build a strong online presence.",
-    },
-    {
-      title: "Graphic Design",
-      subtitle:
-        "Our graphic design services will help you create stunning visuals for your brand.",
-    },
-    {
-      title: "SEO Optimization",
-      subtitle:
-        "Improve your websites visibility on search engines with our SEO optimization services.",
-    },
-    {
-      title: "Logo Design",
-      subtitle:
-        "We provide creative logo design services to help you establish a unique brand identity.",
-    },
-    {
-      title: "UI/UX Design",
-      subtitle:
-        "Our UI/UX design services ensure that your website is user-friendly and visually appealing.",
-    },
-    {
-      title: "Content Writing",
-      subtitle:
-        "Our content writing services will help you create engaging and informative content for your audience.",
-    },
-  ];
-
-  return (
-    <StyledGrid>
-      {cards.map((card, index) => (
-        <Card key={index} title={card.title} subtitle={card.subtitle} />
-      ))}
-    </StyledGrid>
-  );
-};
-
-const StyledGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
-  gap: 40px;
-  padding: 20px;
-  margin: 0 auto; /* Centers the grid */
-  max-width: 1200px; /* Ensures proper alignment */
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-  }
-
-  @media (max-width: 768px) {
-
-    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
-  }
-`;
+}
 
 const StyledWrapper = styled.div`
-  /* Original styling remains unchanged */
-  .container {
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+  .card {
+    padding: 20px;
+    width: 300px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+  }
+
+  .card__link,
+  .card__exit,
+  .card__icon {
     position: relative;
-    width: 190px;
-    height: 254px;
-    transition: 200ms;
-    
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size:20px;
   }
 
-  .container:active {
-    width: 180px;
-    height: 245px;
-  }
-
-  #card {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    transition: 700ms;
-    background: linear-gradient(
-      43deg,
-      rgb(65, 88, 208) 0%,
-      rgb(200, 80, 192) 46%,
-      rgb(255, 204, 112) 100%
-    );
-  }
-
-  .subtitle {
-    transform: translateY(160px);
-    color: rgb(134, 110, 221);
-    text-align: center;
-    width: 100%;
-  }
-
-  .title {
-    opacity: 0;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out-out;
-    transition-delay: 100ms;
-    position: absolute;
-    font-size: large;
-    font-weight: bold;
+  .text {
     color: white;
   }
 
-  .tracker:hover ~ #card .title {
-    opacity: 1;
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
   }
 
-  #prompt {
-    bottom: 8px;
-    left: 12px;
-    z-index: 20;
-    font-size: 20px;
-    font-weight: bold;
-    transition: 300ms ease-in-out-out;
-    position: absolute;
-    max-width: 110px;
-    color: rgb(255, 255, 255);
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
   }
 
-  .tracker {
-    position: absolute;
-    z-index: 200;
-    width: 100%;
-    height: 100%;
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
   }
 
-  .tracker:hover {
-    cursor: pointer;
+  .card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
   }
 
-  .tracker:hover ~ #card #prompt {
-    opacity: 0;
+  @media (max-width: 960px) {
+    .cards-container {
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
   }
 
-  .tracker:hover ~ #card {
-    transition: 300ms;
-    filter: brightness(1.1);
-  }
-
-  .container:hover #card::before {
-    transition: 200ms;
-    content: "";
-    opacity: 80%;
-  }
-
-  .canvas {
-    perspective: 800px;
-    inset: 0;
-    z-index: 200;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-  }
-
-  #card::before {
-    content: "";
-    background: linear-gradient(
-      43deg,
-      rgb(65, 88, 208) 0%,
-      rgb(200, 80, 192) 46%,
-      rgb(255, 204, 112) 100%
-    );
-    filter: blur(2rem);
-    opacity: 30%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    transition: 200ms;
-  }
-
-  .tracker:hover ~ #card {
-    transition: 125ms ease-in-out;
-    transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
-  }
-
-  .noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  @media (max-width: 640px) {
+    .cards-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 `;
 
-export default CardGrid;
+export default Card;
