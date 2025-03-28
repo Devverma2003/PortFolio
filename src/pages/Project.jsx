@@ -4,7 +4,7 @@ const projects = [
     {
         title: "ECommerce Website",
         description: "An online store using FakeStoreAPI, built with HTML, CSS, and JavaScript.",
-        link: "#",
+        link: "https://github.com/Devverma2003/Ecommerce",
         image: "Ecommerce.png" // Replace with actual image URL
     },
     {
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
                         >
-                            <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-lg" />
+                            <img src={project.image} loading="lazy" alt={project.title} className="w-full h-40 object-cover rounded-lg" />
                             <h2 className="text-2xl font-semibold mt-4">{project.title}</h2>
                             <p className="mt-2 text-gray-100">{project.description}</p>
                             <a href={project.link} className="mt-4 inline-block text-indigo-950 transition-all duration-300 hover:scale-110 after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center items-center">View Project</a>

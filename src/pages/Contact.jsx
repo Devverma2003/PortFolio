@@ -24,7 +24,7 @@ export default function ContactPage() {
         transition={{ duration: 1 }}
         className="md:w-1/2 w-full flex justify-center mb-6 md:mb-0"
       >
-        <img src="contact-img.svg" alt="Illustration" className="w-81 " />
+        <img src="contact-img.svg" loading="lazy" alt="Illustration" className="w-81 " />
       </motion.div>
       
       {/* Contact Form */}

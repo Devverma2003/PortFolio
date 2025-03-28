@@ -8,7 +8,7 @@ const Home = () => {
     console.log("All letters have animated!");
   };
   const download =() =>{
-    <a href="https://drive.google.com/file/d/1ve37IvJQCUzxGy6_HqLBO0zzlNLRDqIm/view?usp=drive_link"></a>
+    <a href="https://drive.google.com/file/d/176XxE1_-8tC_tmB3ZkFqRReOgjMA1YSJ/view?usp=drive_link"></a>
   }
 
   return (
@@ -19,6 +19,7 @@ const Home = () => {
         <img
           className="h-48 w-48 sm:h-64 sm:w-64 transition-all duration-300 rounded-full "
           src="img.png"
+          loading="lazy"
           alt="image description"
         />
       </div>

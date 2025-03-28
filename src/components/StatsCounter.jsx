@@ -15,9 +15,9 @@ const StatsCounter = () => {
       }, 50);
     };
 
-    animateCount(setExperience, 6);
-    animateCount(setProjects, 20);
-    animateCount(setClients, 5);
+    animateCount(setExperience, 3);
+    animateCount(setProjects, 1);
+    animateCount(setClients, 0);
   }, []);
 
   return (

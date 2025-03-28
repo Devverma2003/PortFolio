@@ -11,7 +11,7 @@ const skills = [
   { title: "CSS & TAILWIND", percentage: 90, gradientId: "grad2" },
   { title: "JAVASCRIPT", percentage: 80, gradientId: "grad3" },
   { title: "REACT", percentage: 80, gradientId: "grad4" },
-  { title: "NODE JS", percentage: 70, gradientId: "grad5" },
+  // { title: "NODE JS", percentage: 70, gradientId: "grad5" },
 ];
 
 const GradientCircle = ({ percentage, gradientId }) => (
