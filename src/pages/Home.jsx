@@ -7,10 +7,6 @@ const Home = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
-  const download =() =>{
-    <a href="https://drive.google.com/file/d/176XxE1_-8tC_tmB3ZkFqRReOgjMA1YSJ/view?usp=drive_link"></a>
-  }
-
   return (
     <div className="bg-gradient-to-b from-purple-400 to-indigo-600 min-h-screen flex flex-col items-center px-4">
       
