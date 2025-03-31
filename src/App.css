@@ -6,4 +6,42 @@ html {
     scroll-behavior: smooth;
   }
   
- 
+/* Enhanced Responsive Fixes */
+@media (max-width: 768px) {
+    body {
+        padding: 2px;
+        overflow-x: hidden;
+    }
+
+    .container, .main-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    header, nav, footer {
+        text-align: center;
+    }
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 85%;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .grid-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
