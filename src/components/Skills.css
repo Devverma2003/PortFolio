@@ -1,33 +1,63 @@
-.slick-prev, .slick-next {
-    z-index: 10;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%; /* Center arrows vertically */
-    transform: translateY(-50%);
+/* Remove Slick's default arrow content */
+.slick-prev::before,
+.slick-next::before {
+  content: none !important;
 }
 
-/* Ensure arrows are inside the container */
+/* Custom arrows */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 20px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Left and right placement */
 .slick-prev {
-    left: 10px; /* Adjust position */
+  left: 10px;
 }
 
 .slick-next {
-    right: 10px; /* Adjust position */
+  right: 10px;
 }
 
-/* Responsive adjustments */
+/* Mobile (<=768px) */
 @media (max-width: 768px) {
-    .slick-prev, .slick-next {
-        width: 20px; /* Smaller arrows */
-        height: 20px;
-    }
-    
-    .slick-prev {
-        left: 5px; /* Move arrows inside for small screens */
-    }
-    
-    .slick-next {
-        right: 5px; /* Move arrows inside for small screens */
-    }
+  .slick-prev,
+  .slick-next {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+  }
+
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 5px;
+  }
+}
+
+/* Tablet (768px–1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slick-prev,
+  .slick-next {
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
+    left: 8px;
+    right: 8px;
+  }
 }
